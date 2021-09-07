@@ -5,6 +5,8 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
+    
+    // calculate the count of each group
     int cnt1 = 0, cnt2 = 0, cnt3 = 0, cnt4 = 0;
     for (int i = 0; i < n; i++) {
         int m;
@@ -14,7 +16,8 @@ int main() {
         cnt3 += (m >= 36 && m <= 60);
         cnt4 += (m >= 61);
     }
-
+    
+    // output percentile
     cout << "1-18: " << fixed << setprecision(2) << cnt1 / (n/100.0) << '%' << endl; 
     cout << "19-35: " << fixed << setprecision(2) << cnt2 / (n/100.0) << '%' << endl; 
     cout << "36-60: " << fixed << setprecision(2) << cnt3 / (n/100.0) << '%' << endl; 
