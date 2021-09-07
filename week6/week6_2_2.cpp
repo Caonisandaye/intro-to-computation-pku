@@ -8,7 +8,8 @@ int main() {
     double v = h * r * r * 3.14159;
     
     // one more for the rest
-    cout << (int)(20000 / v) + 1 << endl;
+    int bucket = (int)(20000 / v);
+    cout << bucket + (bucket * v < 20000) << endl;
     
     return 0;
 }
