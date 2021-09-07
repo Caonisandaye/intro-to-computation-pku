@@ -6,6 +6,7 @@ int main() {
 	for (int i = 0; i < 10; i++) {
 		cin >> a[i];
 	}
+	
 	// bubble sort
 	for (int i = 0; i < 9; i++) {
 		for (int j = 1; j < 10 - i; j++) {
@@ -20,8 +21,10 @@ int main() {
 			}
 		}
 	}
+	
 	for (int i = 0; i < 10; i++) {
 		cout << a[i] << ' ';
 	}
+	
 	return 0;
 }
