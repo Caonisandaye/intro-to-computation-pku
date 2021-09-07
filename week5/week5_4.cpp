@@ -3,6 +3,8 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
+    
+    // short division
     for (int i = 0; i < n; i++) {
         int m, op = 0;
         cin >> m;
@@ -12,6 +14,6 @@ int main() {
         }
         cout << op << endl;
     }
+    
     return 0;
 }
-//短除
