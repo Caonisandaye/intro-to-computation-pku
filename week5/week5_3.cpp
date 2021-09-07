@@ -3,6 +3,8 @@ using namespace std;
 int main() {
     int n, m;
     cin >> n;
+    
+    // count 1, 5, 10
     int ones = 0, fives = 0, tens = 0;
     for (int i = 0; i < n; i++) {
         cin >> m;
@@ -16,9 +18,10 @@ int main() {
             tens++;
         }
     }
+    
     cout << ones << endl;
     cout << fives << endl;
     cout << tens << endl;
+    
     return 0;
 }
-//循环
