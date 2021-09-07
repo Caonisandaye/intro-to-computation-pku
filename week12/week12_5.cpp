@@ -6,7 +6,7 @@ int main() {
     while (cin >> str >> substr){
         int insert = 0;
         for (int i = 0; i < 11; i++) {
-            if (str[i] == '\0')
+            if (str[i] == 0)
                 break;
             if (str[i] > str[insert])
                 insert = i;
@@ -15,13 +15,13 @@ int main() {
         for (int i = 0; i < insert + 1; i++)
             cout << str[i];
         for (int i = 0; i < 4; i++){
-            if (substr[i] == '\0'){
+            if (substr[i] == 0){
                 break;
             }
             cout << substr[i];
         }
         for (int i = insert + 1; i < 11; i++){
-            if (str[i] == '\0')
+            if (str[i] == 0)
                 break;
             cout << str[i];
         }
