@@ -4,6 +4,7 @@ int main() {
     char str[11] = { 0 }, substr[4] = { 0 };
 
     while (cin >> str >> substr){
+        //find the place largest char to insert
         int insert = 0;
         for (int i = 0; i < 11; i++) {
             if (str[i] == 0)
@@ -12,6 +13,7 @@ int main() {
                 insert = i;
         }
         
+        // output results by three pieces
         for (int i = 0; i < insert + 1; i++)
             cout << str[i];
         for (int i = 0; i < 4; i++){
