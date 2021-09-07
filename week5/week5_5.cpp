@@ -9,16 +9,21 @@ int main() {
         cin >> m;
         a[i] = m;
     }
+    
+    // switch two ends
     int temp;
     for (int i = 0, j = n - 1; i < j; i++, j--) {
         temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }
+    
+    // output
     for (int i = 0; i < n - 1; i++) {
         cout << a[i] << ' ';
     }
     cout << a[n - 1];
+    
     return 0;
 }
 //短除
