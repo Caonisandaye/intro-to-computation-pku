@@ -4,7 +4,8 @@ using namespace std;
 int main() {
     char c;
     int aeiou[5] = {0, 0, 0, 0, 0};
-
+    
+    // count each vowel
     while (cin.get(c)) {
         aeiou[0] += c == 'a';
         aeiou[1] += c == 'e';
