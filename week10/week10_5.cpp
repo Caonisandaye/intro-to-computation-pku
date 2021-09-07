@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 int main() {
@@ -11,7 +10,8 @@ int main() {
             cin >> cell[i][j];
         }
     }
-
+    
+    // check 4 direction's difference and record if all meets criteria
     int abn = 0;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
