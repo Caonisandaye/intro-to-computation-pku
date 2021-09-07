@@ -9,7 +9,8 @@ int main() {
     for (int i; i < M; i++) {
         cin >> start[i] >> end[i];
     }
-
+    
+    // sort the start and end of cutting trees separately
     for (int i = 0; i < M - 1; i++) {
       for (int j = 1; j < M - i; j++) {      
         if (start[j - 1] > start[j]) {
@@ -31,7 +32,8 @@ int main() {
     }
 
     int l = 0, r = 0, tocut = 0;
-
+    
+    // group overlap start and end together to calculate the tocut trees
     while (r < M - 1) {
         if (start[r + 1] <= end[r])
             r += 1;
