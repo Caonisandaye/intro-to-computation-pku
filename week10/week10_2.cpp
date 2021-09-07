@@ -5,7 +5,8 @@ int main() {
     char str1[80], str2[80];
     cin.getline(str1,80);
     cin.getline(str2,80);
-
+    
+    // firstly convert letter to lower case
     int read = 0;
     while (str1[read] != '\0' && str2[read] != '\0') {
         if (str1[read] >= 65 && str1[read] <= 90)
@@ -18,6 +19,7 @@ int main() {
         
     }
     
+    // direct comparing can handle the '\0' too
     if (str1[read] < str2[read])
         cout << '<' << endl;
     
