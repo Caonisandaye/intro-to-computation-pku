@@ -4,7 +4,8 @@ using namespace std;
 int main() {
     int n, dis;
     cin >> n;
-    // input, calculate bike vs walk
+    
+    // input distance, calculate bike vs walk
     for (int i = 0; i < n; i++) {
         cin >> dis;
         double walk = dis / 1.2;
