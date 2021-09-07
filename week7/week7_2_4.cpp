@@ -10,7 +10,7 @@ int main() {
     cin >> value;
     for (int i = 0; i < 6; i++) {
         need[i] = value / face[i];
-        value -= value / face[i] * face[i];
+        value %= face[i];
         cout << need[i] << endl;
     }
 
