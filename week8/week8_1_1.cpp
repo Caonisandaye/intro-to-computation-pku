@@ -9,6 +9,7 @@ int main() {
         bool b = (best == 4);
         bool c = (best != 3);
         bool d = !b;
+        
         // count the nuber of right statements
         if (a + b + c + d != 1)
             continue;
