@@ -29,7 +29,6 @@ int main() {
             newstr[j + i] = str[i];
         }
 
-
         cout << newstr << endl;
 
         char str[11] = { 0 }, substr[4] = { 0 };
