@@ -5,6 +5,7 @@ int main() {
     int year;
     cin >> year;
     char output = 'N';
+    // implementing year logic including 3200 cases
     if (year % 4 == 0) {
         output = 'Y';
         if (year % 100 == 0) {
