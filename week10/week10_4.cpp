@@ -9,11 +9,13 @@ int main() {
             cin >> mat[i][j];
         }
     }
+    
     cin >> l1 >> l2;
-
+    
     if (l1 < 0 || l1 >= 5 || l2 < 0 || l2 >= 5)
         cout << "error" << endl;
 
+    // outpit the matrix line by line and switch the required line beforehand
     else {
         for (int i = 0; i < 5; i++) {
             int l = i;
