@@ -4,7 +4,8 @@ using namespace std;
 int main() {
     int n, m;
     cin >> n;
-
+    
+    // implement grade logic
     if (n >= 95)
         m = 1;
     else if (n >= 90)
