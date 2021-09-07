@@ -5,6 +5,7 @@ int main() {
     int a;
     cin >> a;
     int smaller = 0;
+    
     // input, compare, add
     for (int i = 0; i < 5; i++) {
         int b;
@@ -13,6 +14,7 @@ int main() {
             smaller += b;
         }
     }
+    
     cout << smaller << endl;
 
     return 0;
