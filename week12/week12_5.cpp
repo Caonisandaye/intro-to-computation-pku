@@ -12,24 +12,21 @@ int main() {
                 insert = i;
         }
         
-        char newstr[14] = {0};
         for (int i = 0; i < insert + 1; i++)
-            newstr[i] = str[i];
-        int j;
+            cout << str[i];
         for (int i = 0; i < 4; i++){
             if (substr[i] == '\0'){
-                j = i;
                 break;
             }
-            newstr[insert + 1 + i] = substr[i];
+            cout << substr[i];
         }
         for (int i = insert + 1; i < 11; i++){
             if (str[i] == '\0')
                 break;
-            newstr[j + i] = str[i];
+            cout << str[i];
         }
 
-        cout << newstr << endl;
+        cout << endl;
 
         char str[11] = { 0 }, substr[4] = { 0 };
     }
