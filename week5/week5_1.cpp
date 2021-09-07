@@ -9,6 +9,7 @@ int main() {
     else {
         cout << "YES" << endl;
     }
+    
     return 0;
 }
-//这道题比较简单啦，和A+B是一个级别的，看懂应该没什么问题。
+//straightforward
