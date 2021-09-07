@@ -9,4 +9,4 @@ int main() {
     cout << (m + n) / 2 * ((n - m) / 2 + 1) << endl;
     return 0;
 }
-//直接输出结果
+//output directly
